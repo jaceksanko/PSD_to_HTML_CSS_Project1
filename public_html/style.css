@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+@font-face
+{
+font-family: "Proxima Nova";
+src:url(fonts/Proxima_Nova_Black.otf);
+}
+
+@font-face
+{
+font-family: "DroidSerif Bold";
+src:url(fonts/DroidSerif-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato";
+}
+
+h2 {
+    font-size: 38px;
+    color: #5a5a5a;
+    font-style: italic;
+    padding-top: 150px;
+    font-weight: 300;
+}
+
+hr {
+    border-width: 0px 0px 0px 0px;
+    background-color: #ED145B;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 45px
+}
+
+p {
+    line-height: 30px;
+    font-weight: 300;
+    color: #5a5a5a;
+    font-size: 15px;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    padding-top: 41px;
+    background-image: url("pic/Prostokąt 1 kopia 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px; 
+    position: relative;   
+}
+
+header nav  h1 {
+    font-size: 25.44px;
+    font-family: "Proxima Nova";
+    color: #ffffff;
+    line-height: 20px;    
+    float: left;    
+}
+
+
+header nav h1 span {
+    color: rgb(237, 20, 91);
+}
+
+header ul {
+    list-style-type: none;
+    float: right; 
+}
+header ul li {    
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav ul a {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header ul li:hover a {
+    color: rgb(237, 20, 91);
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    color: #ffffff;    
+    text-align: center;
+    padding-top: 220px;
+      
+}
+
+.jumbotron h1 {
+    font-size: 46px;    
+    text-transform: uppercase; 
+    font-weight: 300; 
+}
+
+.jumbotron p  {
+    font-weight: 300;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 38px; 
+}
+
+.jumbotron h1 span {
+    font-weight: 900;
+}
+
+
+.jumbotron button {
+    border-radius: 24px;
+    background-color: rgb(237, 20, 91);
+    border: none;
+    margin-top: 65px;
+    transition: 1s;
+}
+
+
+.jumbotron button a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 55px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.jumbotron button:hover {
+    background-color: rgb(172, 23, 72);
+    cursor: pointer;
+}
+
+/* picture ofter header*/
+section.pic-after-header {    
+    background-image: url("pic/Prostokąt 1.png");
+    background-position:right bottom 13px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+/* about us section*/
+.about {
+    height: 700px;    
+    background-color: rgb(244, 244, 244);   
+}
+
+.about [class*="col-"] hr {
+    margin-left: 0;
+}
+  
+.about [class*="col-"] p:last-child {
+    padding-top: 50px;
+    text-transform: uppercase; 
+    color: #ED145B;
+    font-weight: 400;
+    width: 35%;
+}
+
+about [class*="col-"] p:last-child  img {
+    float: right;
+}
+
+
+.macbookpro img {
+    width: 1050px;
+    height: 600px;
+    margin-top: 150px;
+    position: absolute;
+    
+}
+
+/* our services*/
+
+.our-services {
+    text-align: center;
+}
+
+.our-services .col-8 p {
+    padding-bottom: 100px;
+}
+
+.ellipse {
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    background-color: transparent 100%;
+}
+
+.ellipse img {
+    margin: 0 auto;
+    padding-top: 45px;   
+}
+
+.our-services .col-3 p {
+    color: #ED145B;
+    font-weight: 700;
+    padding-top: 35px;
+    padding-bottom: 120px;
+}
+
+/* quotes */
+
+.quotes {
+    background-image: url("pic/Prostokąt 1 kopia 5.png");
+    height: 501px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+
+.„ {
+    font-size: 158px;
+    font-family: "DroidSerif Bold";
+    color: rgb(237, 20, 91); 
+    text-align: center;
+    transform: matrix( -1,0,0,-1,0,0);
+    -moz-transform: matrix( -1,0,0,-1,0,0);
+    -webkit-transform: matrix( -1,0,0,-1,0,0);
+    -ms-transform: matrix( -1,0,0,-1,0,0);
+    position: absolute;
+    line-height: 2;    
+  }
+
+  .„-second {
+    font-size: 158px;
+    font-family: "DroidSerif Bold";
+    color: rgb(237, 20, 91);   
+    text-align: center;
+    position: absolute;
+    line-height: 0.5;
+    
+}
+
+.text {
+    padding-top: 145px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.quotes [class*="arrow-"] {
+    position: absolute;
+}
+
+.arrow-left {
+    line-height: 501px;
+    margin-left: 400px  
+}
+
+.arrow-right {
+    line-height: 501px;
+    margin-left: 1800px   
+}
+
+
+/* prices */
+
+.prices {
+    height: 1000px;
+    color: rgb(90, 90, 90);
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.rectangle-grey {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(90, 90, 90);
+    line-height: 150px;
+    
+}
+
+.rectangle {
+    height: 470px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.rectangle-grey p {
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;        
+}
+
+.price-number {
+    font-size: 50px;
+    text-align: center;
+}
+
+.rectangle-grey p:last-child {
+    font-size: 15px;
+}
+
+.rectangle-grey .col-5 {
+    margin-left: 70px;
+}
+
+.button-grey {
+    border-radius: 25px;
+    background-color: rgb(244, 244, 244);
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 32px;
+    margin-top: 125px;
+}
+
+.button-grey p {
+    line-height: 50px;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+.prices ul {
+    margin-top: 65px;
+}
+
+
+.prices ul li {
+    list-style-type: none;
+    line-height: 38px;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+.button-red {
+    border-radius: 25px;
+    background-color: rgb(237, 20, 91);
+    width: 200px;
+    height: 50px;
+    margin-left: 32px;
+    margin-top: 20px;   
+}
+
+.button-red p {
+    line-height: 50px;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+.rectangle:hover .rectangle-grey {
+    background-color: rgb(237, 20, 91);
+}
