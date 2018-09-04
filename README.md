@@ -4,4 +4,4 @@ Mogłem dokończyć stronę lub poświęcić czas na przećwiczenie flexboxa i g
 
 Podgląd strony:
 
-https://jaceksanko.github.io/PierwszyProjektDodatkowyKodilla/
+https://jaceksanko.github.io/PSD_to_HTML_CSS_Project1/
